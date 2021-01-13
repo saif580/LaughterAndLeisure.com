@@ -1,0 +1,57 @@
+<%layout('layouts/boilerplate.ejs')%>
+<link rel="stylesheet" href="/stylesheets/bg.css">
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="row">
+    <h1 class="text-center">Add New Place</h1>
+    <div class="col-md-6 offset-md-3 mb-5">
+        <div class="card shadow">
+            <div class="card-body">
+        <form action="/destination" method="POST" class="validated-form" novalidate enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="title" name="destination[title]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-control" type="text" id="location" name="destination[location]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="price">Destination Cost</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="price-label">Rs.</span>
+                    <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
+                        aria-describedby="price-label" name="destination[price]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="destination[description]"
+                    required></textarea>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Upload Images</label>
+                <input class="form-control" name="image" type="file" id="formFileMultiple" multiple>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
