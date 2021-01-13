@@ -114,8 +114,8 @@ app.use(
                 "https://res.cloudinary.com/db3kjpvkf/",
                 "https://images.unsplash.com/",
                 "https://images.pexels.com/"
-            ],
-            mediaSrc:["http://localhost:3000/bgvideo.mp4","https:enigmatic-wildwood-38855.herokuapp.com/bgvideo.mp4","https://enigmatic-wildwood-38855.herokuapp.com/bgvideo.mp4"],
+            ],                                             
+            mediaSrc:["http://localhost:3000/bgvideo.mp4","https://enigmatic-wildwood-38855.herokuapp.com/bgvideo.mp4"],
             fontSrc: ["'self'", ...fontSrcUrls],
         },
     })
